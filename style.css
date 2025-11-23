@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit";
+  padding: 56px;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  padding: 32px;
+  width: 736px;
+}
+
+.container-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.container-title {
+  padding: 16px 16px 16px 0;
+}
+
+.container-title .title {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+.container-title .description {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.container-preparation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 24px;
+  color: hsl(332, 51%, 32%);
+  border-radius: 12px;
+}
+
+.container-preparation-time .time-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container-preparation-time .time-step {
+  margin-left: 24px;
+}
+
+.container-preparation-time .time-step .step::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+
+.time-step .step {
+  font-weight: 500;
+  color: hsl(24, 5%, 18%);
+  padding: 8px;
+  font-size: 14px;
+}
+
+.time-step .step span {
+  font-weight: 400;
+}
+
+.container-ingredients,
+.container-instructions,
+.container-nutrition {
+  margin: 28px 0;
+  color: hsl(14, 45%, 36%);
+}
+
+.container-ingredients .ingredient-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+.container-ingredients .ingredient-item {
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+.container-ingredients .ingredient-item .ingredient-details::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+
+.container-ingredients .ingredient-details {
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  padding: 12px 8px 0;
+}
+
+hr {
+  color: hsl(30, 10%, 84%);
+}
+
+.container-instructions .instructions-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+.container-instructions .instruction-item {
+  margin-left: 24px;
+  font-size: 14px;
+}
+
+.container-instructions .instruction-item .instruction-details::marker {
+  color: hsl(332, 51%, 32%);
+  font-weight: 700;
+}
+
+.container-instructions .instruction-details {
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  padding: 12px 8px 0;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.container-instructions .instruction-details span {
+  font-weight: 400;
+}
+
+.container-nutrition .nutrition-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Young Serif";
+}
+
+.container-nutrition .nutrition-details {
+  padding: 12px 12px 12px 0;
+  line-height: 140%;
+  font-size: 14px;
+  color: hsl(24, 5%, 18%);
+}
+
+.nutrition-calories table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition-calories th,
+.nutrition-calories td {
+  border-bottom: 1px solid hsl(30, 10%, 84%);
+  text-align: left;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+
+.nutrition-calories table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrition-calories table td:nth-child(1),
+.nutrition-calories table th:nth-child(1) {
+  color: hsl(24, 5%, 18%);
+  font-weight: 400;
+}
+
+.nutrition-calories table td:nth-child(2) {
+  font-weight: 700;
+}
+
+@media (max-width: 375px) {
+      body{
+            padding: 0;
+      }
+}
