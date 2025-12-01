@@ -20,6 +20,7 @@ body {
   border-radius: 12px;
   padding: 32px;
   max-width: 736px;
+  margin: 40px 16px;
 }
 
 .container-img {
@@ -180,5 +181,10 @@ hr {
 @media (max-width: 375px) {
       body{
             padding: 0;
+      }
+
+      .container{
+        margin: 0;
+
       }
 }
