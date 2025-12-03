@@ -178,13 +178,27 @@ hr {
   font-weight: 700;
 }
 
-@media (max-width: 375px) {
-      body{
-            padding: 0;
-      }
+@media (max-width: 576px) {
+  body {
+    padding: 0;
+  }
 
-      .container{
-        margin: 0;
+  .title {
+    font-size: 28px !important;
+  }
 
-      }
+  .container {
+    margin: 0;
+    padding: 16px;
+  }
+
+  .container-preparation-time .time-title {
+    font-size: 16px;
+  }
+
+  .ingredient-title,
+  .instructions-title,
+  .nutrition-title {
+    font-size: 18px !important;
+  }
 }
